@@ -15,6 +15,10 @@ TARGET_OTA_ASSERT_DEVICE := polaris
 # Display
 TARGET_SCREEN_DENSITY := 440
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_polaris
+TARGET_RECOVERY_DEVICE_MODULES := libinit_polaris
+
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/xiaomi/polaris
 TARGET_KERNEL_CONFIG := polaris_defconfig
