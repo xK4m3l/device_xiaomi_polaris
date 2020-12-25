@@ -9,13 +9,13 @@ $(call inherit-product, device/xiaomi/polaris/device.mk)
 # Inherit some common exui stuff.
 TARGET_USES_BLUR := true
 EXUI_BUILDTYPE := OFFICIAL
-WITH_GAPPS := true
+USE_GAPPS := true
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+$(call inherit-product, vendor/exui/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := exui_polaris

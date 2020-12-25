@@ -59,6 +59,6 @@ void property_override_dual(char const system_prop[],
 void vendor_load_properties() {
     // fingerprint
     property_override("ro.build.description", "polaris-user 8.0.0 OPR1.170623.032 V9.5.19.0.ODGMIFA release-keys");
-    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/coral/coral:11/RP1A.201005.004/6782484:user/release-keys");
+    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/coral/coral:11/RQ1A.201205.008/6943376:user/release-keys");
     property_override("ro.boot.verifiedbootstate", "green");
 }
